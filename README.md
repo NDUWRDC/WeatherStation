@@ -3,7 +3,7 @@ The Water Research & Development Centre is implementing an automatic weather sta
 
 ## Location
 The station is located at [coordinates 0.60897/32.48098](https://www.openstreetmap.org/#map=19/0.60897/32.48098)
-![](images/map.png "Location 0.60897/32.48098")
+![](Images/map.png "Location 0.60897/32.48098")
 
 ## Measurements 
 Temperature\

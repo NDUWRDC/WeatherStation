@@ -8,11 +8,11 @@
 $servername = "localhost";
 
 // REPLACE with your Database name
-$dbname = "luzizyye_esp_data";
+$dbname = "weather_station";
 // REPLACE with Database user
-$username = "luzizyye_esp_board";
+$username = "root";
 // REPLACE with Database user password
-$password = "Ravens6201";
+$password = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -21,7 +21,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT id, value1, value2, value3, reading_time FROM Sensor order by reading_time desc limit 40";
+$sql = "SELECT id, temperature, humidity, reading_time FROM weather_data order by reading_time desc limit 40";
 
 $result = $conn->query($sql);
 
@@ -41,9 +41,8 @@ foreach ($readings_time as $reading){
     $i += 1;
 }
 
-$value1 = json_encode(array_reverse(array_column($sensor_data, 'value1')), JSON_NUMERIC_CHECK);
-$value2 = json_encode(array_reverse(array_column($sensor_data, 'value2')), JSON_NUMERIC_CHECK);
-$value3 = json_encode(array_reverse(array_column($sensor_data, 'value3')), JSON_NUMERIC_CHECK);
+$temp = json_encode(array_reverse(array_column($sensor_data, 'temperature')), JSON_NUMERIC_CHECK);
+$humid = json_encode(array_reverse(array_column($sensor_data, 'humidity')), JSON_NUMERIC_CHECK);
 $reading_time = json_encode(array_reverse($readings_time), JSON_NUMERIC_CHECK);
 
 /*echo $value1;
@@ -79,9 +78,8 @@ $conn->close();
     <div id="chart-pressure" class="container"></div>
 <script>
 
-var value1 = <?php echo $value1; ?>;
-var value2 = <?php echo $value2; ?>;
-var value3 = <?php echo $value3; ?>;
+var temperature = <?php echo $temp; ?>;
+var humidity = <?php echo $humid; ?>;
 var reading_time = <?php echo $reading_time; ?>;
 
 var chartT = new Highcharts.Chart({
@@ -89,7 +87,7 @@ var chartT = new Highcharts.Chart({
   title: { text: ' Temperature' },
   series: [{
     showInLegend: false,
-    data: value1
+    data: temperature
   }],
   plotOptions: {
     line: { animation: false,
@@ -113,7 +111,7 @@ var chartH = new Highcharts.Chart({
   title: { text: ' Humidity' },
   series: [{
     showInLegend: false,
-    data: value2
+    data: humidity
   }],
   plotOptions: {
     line: { animation: false,
@@ -132,28 +130,7 @@ var chartH = new Highcharts.Chart({
 });
 
 
-var chartP = new Highcharts.Chart({
-  chart:{ renderTo:'chart-pressure' },
-  title: { text: ' Pressure' },
-  series: [{
-    showInLegend: false,
-    data: value3
-  }],
-  plotOptions: {
-    line: { animation: false,
-      dataLabels: { enabled: true }
-    },
-    series: { color: '#18009c' }
-  },
-  xAxis: {
-    type: 'datetime',
-    categories: reading_time
-  },
-  yAxis: {
-    title: { text: 'Pressure (hPa)' }
-  },
-  credits: { enabled: false }
-});
+
 
 </script>
 </body>

@@ -19,4 +19,6 @@ Current readings will be accessible at the [centre's website](https://nduwrdc.or
 The DHT11 sensor connects to the Atmega328 through pin 2 and the temperature and humidity.ino file picks the reading into the system . A datase is created on the 
 server to handle all the values as they come in . Template files to handle the values on the server are cureently hosted on the [Safe Bugs Domain](https://www.safebugsug.com/weather-chart.php).\
 ### [WEATHER STATION DATA HERE ](https://www.safebugsug.com/weather-data.php)
+![data](https://user-images.githubusercontent.com/42169195/106977080-ace7d180-676a-11eb-9b4a-e54408b7de49.PNG)
 ### [WEATHER CHART](https://www.safebugsug.com/weather-chart.php)
+![weather chat](https://user-images.githubusercontent.com/42169195/106977132-c557ec00-676a-11eb-8065-3c3ac2a12751.PNG)

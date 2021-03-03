@@ -46,16 +46,9 @@ The DHT11 sensor connects to the Atmega328 through pin 2 and the temperature and
 
 ## Weather Station Set
 |Component|Usage|Source|Cost|
-| --- | --- | --- | --- |
-|Weather station set | Sensors and supports | UG Unlocked | 473,000 UGX |
-|Weather shield | Connects sensors to microcontoller | UG Unlocked | 147,000 UGX |
+| --- | --- | --- | ---: |
+|[Weather meter kit](https://www.sparkfun.com/products/15901) | [Tipping-rain-gauge](https://bc-robotics.com/shop/tipping-rain-gauge/) <br> [Wind Vane – Analog Direction Senso](https://bc-robotics.com/shop/wind-vane-analog-direction-sensor-bc-robotics/)<br> [Anemometer – Wind Speed Sensor](https://bc-robotics.com/shop/anemometer-wind-speed-sensor-2/) | UG Unlocked | 473,000 UGX |
+|[Weather shield](https://www.sparkfun.com/products/13674) | Connects sensors to microcontoller | UG Unlocked | 147,000 UGX |
 
-![Weather station set](https://cdn.sparkfun.com/r/500-500/assets/parts/1/4/5/3/9/15901-Weather_Meter-02.jpg)\
-  [Arduino Hookup Guide](https://learn.sparkfun.com/tutorials/arduino-weather-shield-hookup-guide-v12)\
-  [Sensor Usage Notes Assembly p/n 80422](https://www.sparkfun.com/datasheets/Sensors/Weather/Weather%20Sensor%20Assembly..pdf)
-  * [Tipping-rain-gauge](https://bc-robotics.com/shop/tipping-rain-gauge/)
-  * [Wind Vane – Analog Direction Senso](https://bc-robotics.com/shop/wind-vane-analog-direction-sensor-bc-robotics/)
-  * [Anemometer – Wind Speed Sensor](https://bc-robotics.com/shop/anemometer-wind-speed-sensor-2/)
-
-  [SparkFun Weather Shield](https://bc-robotics.com/shop/sparkfun-weather-shield-v2/)
-  ![SparkFun Weather Shield](https://cdn.sparkfun.com/r/500-500/assets/parts/1/1/1/2/1/13674-01.jpg)    
+![Weather station set](https://cdn.sparkfun.com/r/500-500/assets/parts/1/4/5/3/9/15901-Weather_Meter-02.jpg)
+![SparkFun Weather Shield](https://cdn.sparkfun.com/r/500-500/assets/parts/1/1/1/2/1/13674-01.jpg)    

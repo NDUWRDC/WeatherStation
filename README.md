@@ -50,5 +50,8 @@ The DHT11 sensor connects to the Atmega328 through pin 2 and the temperature and
 |[Weather meter kit](https://www.sparkfun.com/products/15901) | [Tipping-rain-gauge](https://bc-robotics.com/shop/tipping-rain-gauge/) <br> [Wind Vane – Analog Direction Senso](https://bc-robotics.com/shop/wind-vane-analog-direction-sensor-bc-robotics/)<br> [Anemometer – Wind Speed Sensor](https://bc-robotics.com/shop/anemometer-wind-speed-sensor-2/) | UG Unlocked | 473,000 UGX |
 |[Weather shield](https://www.sparkfun.com/products/13674) | Connects sensors to microcontoller | UG Unlocked | 147,000 UGX |
 
+[Weather Meter Hookup Guide](https://learn.sparkfun.com/tutorials/weather-meter-hookup-guide)\
+[Weather Shield Hookup Guide](https://learn.sparkfun.com/tutorials/photon-weather-shield-hookup-guide-v11)
+
 ![Weather station set](https://cdn.sparkfun.com/r/500-500/assets/parts/1/4/5/3/9/15901-Weather_Meter-02.jpg)
 ![SparkFun Weather Shield](https://cdn.sparkfun.com/r/500-500/assets/parts/1/1/1/2/1/13674-01.jpg)    
